@@ -7,6 +7,12 @@ if [ ! -n "$WERCKER_BASH_TEMPLATE_INPUT" ]; then
   export WERCKER_BASH_TEMPLATE_INPUT="*.template*"
 fi
 
+echo "------"
+echo $WERCKER_BASH_TEMPLATE_INPUT
+echo "------"
+ls
+echo "------"
+
 if [ ! -n "$WERCKER_BASH_TEMPLATE_OUTPUT" ]; then
   export WERCKER_BASH_TEMPLATE_OUTPUT="./"
 fi
